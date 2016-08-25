@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css.map">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="script/react.js" charset="utf-8"></script>
     <script src="script/react-dom.js" charset="utf-8"></script>
-    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+    <script src="script/browser.min.js"></script>
+    <script type="text/babel" src="script/app.js"></script>
 
     
 </head>
 <body>
-<div id="container"></div>
-<script type="text/babel" src="script/app.js"></script>
+<div class="row">
+<div class="container-fluid">
+    <div id="fullheight" class="leftbox col-lg-4 orange"></div>
+    <div id="centerbox" class="col-lg-4 orange"></div>
+    <div id="fullheight" class="rightbox col-lg-4 orange"></div>
+</div>
+</div>
 </body>
 </html>

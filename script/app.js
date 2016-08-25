@@ -9,22 +9,22 @@ var Counter = React.createClass({
     },
     render: function(){
         return(
-        <div className="box">
-            <div className="counter">
-                {this.state.count}
+            <div className="box col-lg-12">
+                <div className="counter col-lg-12 text-center">
+                    {this.state.count}
+                </div>
+                <div className="button col-lg-12 text-center">
+                    <a onClick={this.counterIncrement}>
+                        Click on it!
+                    </a>
+                </div>
             </div>
-            <div className="button">
-                <a onClick={this.counterIncrement}>
-                    Click on it!
-                </a>
-            </div>
-        </div>
         );
     }
 });
 ReactDOM.render(
     <Counter/>,
-    document.getElementById('container')
+    document.getElementById('centerbox')
 );
 
 
